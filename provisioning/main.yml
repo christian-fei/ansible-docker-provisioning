@@ -1,0 +1,8 @@
+---
+- hosts: main
+  tasks:
+    - name: Create main user
+      user: name=main
+            state=present
+            groups="sudo"
+      sudo: yes
